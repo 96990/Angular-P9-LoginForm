@@ -19,7 +19,6 @@ export class AuthDirective{ /**Structural Directive */
             else{
                 this.viewContainerRef.clear();
             }
-            console.log("authdirective",this.templateRef);
         })
          
     }

@@ -13,7 +13,6 @@ export class SafeLinkDirective{ /**Attribute Directive */
     queryParam = input('myapp', {alias: 'appSafeLink'});
     private hostElementRef = inject<ElementRef<HTMLAnchorElement>>(ElementRef);
     constructor(){
-        console.log("this is a custom selflink direcive.");
     }
 
     onConfirmLeavePage(event: MouseEvent){

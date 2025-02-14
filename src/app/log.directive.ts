@@ -8,7 +8,5 @@ export class LogDirective{
     private elementRef = inject(ElementRef);
 
     constructor(){
-        console.log("Log Directive");
-        console.log(this.elementRef.nativeElement);
     }
 }

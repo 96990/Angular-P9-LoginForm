@@ -16,7 +16,6 @@ export class LearningResourcesComponent {
   constructor(){
     effect(() => {
         this.authService.activePermission() == 'admin' || this.authService.activePermission() == 'user' ? this.isLoggedIn.set(true) : this.isLoggedIn.set(false);
-        console.log(this.isLoggedIn())
     },{allowSignalWrites: true})
   }
   onLogout(){
